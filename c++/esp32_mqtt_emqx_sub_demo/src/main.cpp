@@ -22,9 +22,6 @@ PubSubClient client(espClient);
 
 const int led = 32;  // the number of the pushbutton pin
 
-// variables will change:
-int buttonState = 0;  // variable for reading the pushbutton status
-
 
 void on_message_recieved_callback(char *topic, byte *payload, unsigned int length) {
  Serial.print("Message arrived in topic: ");
