@@ -67,7 +67,7 @@ void send_mqtt_message(const JsonDocument& _payload, const char *topic ){
   serializeJson(_payload , payload_serialized);
 
   // Publish the JSON string to the MQTT topic
-  client.publish(topic, payload_serialized.c_str());
+  client.publish(topic, payload_serialized.c_str(),true);
 
 
 }
