@@ -21,13 +21,14 @@ void setup() {
 
 
  initWiFi(ssid, password);
+
  
 }
 
 void loop() {
 
   if(digitalRead(button) == HIGH){
-    send_message("this was sent from an esp32 button!");
+    send_message("this was sent from an esp32 button!", channel_webhook_url);
     Serial.print("test");
     delay(100000);
   }

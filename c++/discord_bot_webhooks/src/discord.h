@@ -4,17 +4,16 @@
 
 
 
-const char* WEBHOOK_URL = "https://discord.com/api/webhooks/1084506187241898064/kN2iT14EP2iNaoTtjOrIz2XTQqkTjx-qAg9WSoIzNMZj_hOTDU3ZcTMkESleYx5nxKnh";
 
 
 
 
-void send_message(char* message){
+void send_message(const char* message, const char* channel_url){
  // Create an instance of HTTPClient
   HTTPClient http;
 
   // Set the destination URL
-  http.begin(WEBHOOK_URL);
+  http.begin(channel_url);
 
   // Set the Content-Type header to indicate the format of the request body
   http.addHeader("Content-Type", "application/json");
