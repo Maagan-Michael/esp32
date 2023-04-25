@@ -1,40 +1,3 @@
-
-// #include <Arduino.h>
-// #include <rfid.h>
-
-
-
-
-// void set_pins (){
-
-
-// }
-
-// void setup() 
-// {
-//   Serial.begin(115200);
-//   while (!Serial){}
-  
-//   set_pins();
-//  rfid_setup();
-
-
-
-
-// }
-
-//   void loop() {
-
-//    // Aguarda a aproximacao do cartao
-//    //waiting the card approach
-//   if ( ! mfrc522.PICC_IsNewCardPresent()) 
-//   {
-//     return;
-//   }
-//   // Select a card
-//   if ( ! mfrc522.PICC_ReadCardSerial()) 
-//   {
-//     return;
 // connected to:
 //SDA => 5
 //SCK => 18
@@ -44,14 +7,6 @@
 //GND => GND
 //RST => 27
 //VCC => 3.3v
-
-/*
- * This ESP32 code is created by esp32io.com
- *
- * This ESP32 code is released in the public domain
- *
- * For more detail (instruction and wiring diagram), visit https://esp32io.com/tutorials/esp32-rfid-nfc
- */
 
 #include <SPI.h>
 #include <MFRC522.h>
